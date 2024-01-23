@@ -55,6 +55,7 @@ function Sign() {
                     
                     <form className="max-w-sm mx-auto" onSubmit={HandleSubmit}>
                         <h1 className='text-3xl text-center font-bold my-4'>Sign Up</h1>
+                        <p>Please Enter on Alraedy have a Account</p>
                         <div className="mb-5">
                             <label
                                 htmlFor="name"
