@@ -18,7 +18,7 @@ function Login() {
                 navigate("/Admin");
                 window.location.reload()
 
-            } else if (email="student123@gmail.com" and password="12345") {
+            } else  {
                 const AuthToken = "atuwetqw34534625374dgfsdhgfdhfg";
                 window.location.reload()
                  navigate("/");
