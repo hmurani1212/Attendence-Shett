@@ -55,7 +55,7 @@ function Home() {
                 });
             }
         } catch (error) {
-            toast.error('Attendance Already Marked', {
+            toast.error('Error while Maeking your Attendence', {
                 position: toast.POSITION.TOP_RIGHT,
                 autoClose: 3000, // 3 seconds
                 hideProgressBar: false,
