@@ -19,7 +19,7 @@ function App() {
       <Routes>
         {!getAuth ? (
           // If not authenticated, show Sign component
-          <Route path="/" element={<Sign />} />
+          <Route path="/" element={<Login />} />
         ) : (
           // If authenticated, show Home component
           <>
