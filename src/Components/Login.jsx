@@ -20,6 +20,8 @@ function Login() {
 
             } else {
                  navigate("/");
+                const AuthToken = "atuwetqw34534625374dgfsdhgfdhfg";
+                localStorage.setItem("AuthToken", AuthToken);
                 // // User login
                 // const response = await axios.post("http://localhost:5000/api/vi/Login", {
                 //     email,
@@ -28,7 +30,7 @@ function Login() {
 
                 // const result = await response.data;
                 // const AuthToken = result.AuthToken;
-                // localStorage.setItem("AuthToken", AuthToken);
+                // 
                 // setTimeout(() => {
                 //     window.location.reload()
                    
