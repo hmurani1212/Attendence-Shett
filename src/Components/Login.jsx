@@ -19,21 +19,23 @@ function Login() {
                 window.location.reload()
 
             } else {
-                // User login
-                const response = await axios.post("http://localhost:5000/api/vi/Login", {
-                    email,
-                    password,
-                });
+                 navigate("/");
+                // // User login
+                // const response = await axios.post("http://localhost:5000/api/vi/Login", {
+                //     email,
+                //     password,
+                // });
 
-                const result = await response.data;
-                const AuthToken = result.AuthToken;
-                localStorage.setItem("AuthToken", AuthToken);
-                setTimeout(() => {
-                    window.location.reload()
-                    navigate("/");
-                }, 1000);
+                // const result = await response.data;
+                // const AuthToken = result.AuthToken;
+                // localStorage.setItem("AuthToken", AuthToken);
+                // setTimeout(() => {
+                //     window.location.reload()
+                   
+                // }, 1000);
             }
         } catch (error) {
+             navigate("/");
             // Handle login errors
             if (error.response && error.response.status === 400) {
                 toast.error('Login with correct credentials', {
@@ -46,6 +48,7 @@ function Login() {
                 });
                 console.log(error.response.data); // Log server error response
             } else {
+                 navigate("/");
                 console.log(error); // Log other errors
             }
         }
@@ -61,6 +64,7 @@ function Login() {
                 >
                     <form className="max-w-sm mx-auto" onSubmit={HandleSubmit}>
                         <h1 className='text-3xl text-center font-bold my-4'>Login</h1>
+                        <h1>Enter (email="student123@gmailc.ocm" and password="12345"</h1>
                         <div className="mb-5">
                             <label
                                 htmlFor="email"
