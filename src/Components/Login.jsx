@@ -18,8 +18,7 @@ function Login() {
                 navigate("/Admin");
                 window.location.reload()
 
-            } else {
-                
+            } else if (email="student123@gmail.com" and password="12345") {
                 const AuthToken = "atuwetqw34534625374dgfsdhgfdhfg";
                 window.location.reload()
                  navigate("/");
@@ -39,7 +38,7 @@ function Login() {
                 // }, 1000);
             }
         } catch (error) {
-             navigate("/");
+            
             // Handle login errors
             if (error.response && error.response.status === 400) {
                 toast.error('Login with correct credentials', {
@@ -52,7 +51,7 @@ function Login() {
                 });
                 console.log(error.response.data); // Log server error response
             } else {
-                 navigate("/");
+                
                 console.log(error); // Log other errors
             }
         }
@@ -67,8 +66,10 @@ function Login() {
                     className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                     <form className="max-w-sm mx-auto" onSubmit={HandleSubmit}>
+                         <h1>Enter (email="student123@gmail.com" and password="12345")</h1>
+                          <h1>For admin pannel Enter (email === "admin123@gmail.com" && password === "12345")</h1>
                         <h1 className='text-3xl text-center font-bold my-4'>Login</h1>
-                        <h1>Enter (email="student123@gmailc.ocm" and password="12345"</h1>
+                       
                         <div className="mb-5">
                             <label
                                 htmlFor="email"
